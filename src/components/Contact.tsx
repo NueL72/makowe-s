@@ -160,29 +160,6 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-semibold text-slate-700 mb-3">
-                    Service Required *
-                  </label>
-                  <select
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 text-slate-900"
-                  >
-                    <option value="">Select service needed</option>
-                    <option value="building-maintenance">Building Maintenance</option>
-                    <option value="heavy-haulage">Heavy Haulage</option>
-                    <option value="construction-support">Construction Support</option>
-                    <option value="equipment-services">Equipment Services</option>
-                    <option value="facility-management">Facility Management</option>
-                    <option value="safety-compliance">Safety & Compliance</option>
-                    <option value="emergency-service">Emergency Service</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-3">
                     Project Details
                   </label>
                   <textarea
