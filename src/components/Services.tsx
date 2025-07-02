@@ -1,66 +1,67 @@
 import React from 'react';
-import { Building2, Truck, Wrench, Shield, ArrowRight, Zap, Settings, HardHat, Phone, PhoneIcon, PhoneIncoming } from 'lucide-react';
+import { Building2, Truck, Wrench, Shield, ArrowRight, Zap, Settings, HardHat, Phone, PhoneIcon, PhoneIncoming, Fuel, FileText, MapPin } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const Services = () => {
   const services = [
+
     {
-      icon: Building2,
-      title: 'Building Maintenance',
-      description: 'Comprehensive facility management and maintenance services',
-      features: ['HVAC Systems', 'Electrical Maintenance', 'Plumbing Services', 'Structural Repairs'],
-      price: 'Custom Quote',
-      color: 'from-blue-500 to-cyan-600',
-      bgColor: 'from-blue-50 to-cyan-50',
+      icon: Fuel,
+      title: 'Wholesale Diesel (AGO)',
+      description: 'Premium quality diesel fuel supply in bulk quantities for industrial and commercial operations',
+      features: ['Automotive Gas Oil (AGO)', 'Bulk Volume Discounts', 'Quality Guaranteed', 'Flexible Payment Terms'],
+      price: 'Competitive Rates',
+      color: 'from-blue-600 to-indigo-700',
+      bgColor: 'from-blue-50 to-indigo-50',
       popular: true
     },
     {
-      icon: Truck,
-      title: 'Heavy Haulage',
-      description: 'Specialized transport for heavy equipment and materials',
-      features: ['Equipment Transport', 'Oversized Loads', 'Construction Materials', 'Emergency Transport'],
-      price: 'Per Project',
-      color: 'from-emerald-500 to-teal-600',
+      icon: Zap,
+      title: 'Wholesale Petrol (PMS)',
+      description: 'High-grade petrol supply for retail stations, fleet operators, and commercial enterprises',
+      features: ['Premium Motor Spirit (PMS)', 'Consistent Supply Chain', 'Market-Leading Prices', 'Technical Support'],
+      price: 'Market Rates',
+      color: 'from-emerald-600 to-teal-700',
       bgColor: 'from-emerald-50 to-teal-50',
       popular: true
     },
     {
-      icon: HardHat,
-      title: 'Construction Support',
-      description: 'Complete construction project management and execution',
-      features: ['Project Planning', 'Site Management', 'Quality Control', 'Safety Compliance'],
-      price: 'Consultation',
-      color: 'from-purple-500 to-pink-600',
+      icon: Truck,
+      title: 'Bulk Fuel Transportation',
+      description: 'Specialized logistics and transportation services for safe fuel delivery nationwide',
+      features: ['Certified Tank Trucks', 'GPS Tracking', 'Safety Compliance', 'Nationwide Coverage'],
+      price: 'Per Delivery',
+      color: 'from-orange-600 to-red-700',
+      bgColor: 'from-orange-50 to-red-50',
+      popular: true
+    },
+    {
+      icon: Building2,
+      title: 'Corporate Fuel Contracts',
+      description: 'Tailored fuel supply agreements for corporations, institutions, and large-scale operations',
+      features: ['Long-term Contracts', 'Volume Guarantees', 'Price Stability', 'Dedicated Account Management'],
+      price: 'Contract Based',
+      color: 'from-purple-600 to-pink-700',
       bgColor: 'from-purple-50 to-pink-50',
       popular: false
     },
     {
-      icon: Settings,
-      title: 'Equipment Services',
-      description: 'Maintenance and repair of heavy machinery and equipment',
-      features: ['Preventive Maintenance', 'Emergency Repairs', 'Parts Supply', 'Equipment Rental'],
-      price: 'Service Call',
-      color: 'from-orange-500 to-red-600',
-      bgColor: 'from-orange-50 to-red-50',
-      popular: false
-    },
-    {
-      icon: Wrench,
-      title: 'Facility Management',
-      description: 'Complete facility operations and maintenance management',
-      features: ['Operations Management', 'Maintenance Planning', 'Vendor Coordination', 'Cost Optimization'],
-      price: 'Monthly Contract',
-      color: 'from-indigo-500 to-blue-600',
+      icon: FileText,
+      title: 'Institutional Supply',
+      description: 'Specialized fuel supply services for government institutions, hospitals, and educational facilities',
+      features: ['Government Compliance', 'Tender Participation', 'Credit Facilities', 'Emergency Supply'],
+      price: 'Tender Rates',
+      color: 'from-indigo-600 to-blue-700',
       bgColor: 'from-indigo-50 to-blue-50',
       popular: false
     },
     {
-      icon: Shield,
-      title: 'Safety & Compliance',
-      description: 'Comprehensive safety audits and compliance management',
-      features: ['Safety Audits', 'Compliance Checks', 'Training Programs', 'Risk Assessment'],
-      price: 'Assessment',
-      color: 'from-green-500 to-emerald-600',
+      icon: MapPin,
+      title: 'Depot-to-Site Delivery',
+      description: 'Comprehensive coordination of fuel delivery from depot facilities directly to your location',
+      features: ['Route Optimization', 'Delivery Scheduling', 'Real-time Tracking', 'Site Coordination'],
+      price: 'Logistics Fee',
+      color: 'from-green-600 to-emerald-700',
       bgColor: 'from-green-50 to-emerald-50',
       popular: false
     }
@@ -140,10 +141,6 @@ const Services = () => {
                       <div className="text-lg font-black text-slate-900">{service.price}</div>
                       <div className="text-xs text-slate-500">Contact for pricing</div>
                     </div>
-                    <button className={`group/btn px-6 py-3 bg-gradient-to-r ${service.color} text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2`}>
-                      <span>Get Quote</span>
-                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </button>
                   </div>
                 </div>
               </div>

@@ -74,7 +74,7 @@ const Header = () => {
                 href="#contact"
                 className="relative px-6 py-3 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-xl overflow-hidden group hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300"
               >
-                <span className="relative z-10">Get Quote</span>
+                <span className="relative z-10">Get in Touch</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
             </div>
