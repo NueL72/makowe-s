@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, Truck, Wrench, Shield, ArrowRight, Zap, Settings, HardHat, Phone, PhoneIcon, PhoneIncoming, Fuel, FileText, MapPin } from 'lucide-react';
+import { Building2, Truck, Wrench, Shield, ArrowRight, Zap, Settings, HardHat, Phone, PhoneIcon, PhoneIncoming, Fuel, FileText, MapPin, Paperclip, File } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const Services = () => {
@@ -36,7 +36,7 @@ const Services = () => {
       popular: true
     },
     {
-      icon: Building2,
+      icon: File,
       title: 'Corporate Fuel Contracts',
       description: 'Tailored fuel supply agreements for corporations, institutions, and large-scale operations',
       features: ['Long-term Contracts', 'Volume Guarantees', 'Price Stability', 'Dedicated Account Management'],
@@ -77,12 +77,12 @@ const Services = () => {
             <span className="text-sm font-semibold text-orange-700">Professional Services</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-6">
-            Complete Infrastructure
-            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"> Solutions</span>
+          Complete Fuel Supply
+            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"> & Logistics</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            From building maintenance to heavy transport, we provide comprehensive 
-            services to keep your operations running smoothly and efficiently.
+          From wholesale diesel and petrol supply to comprehensive logistics coordination, 
+          we deliver reliable fuel solutions that power your business operations.
           </p>
         </AnimatedSection>
 
